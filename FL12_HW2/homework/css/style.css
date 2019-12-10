@@ -11,7 +11,7 @@
         border: 25px solid;
         border-image-source: linear-gradient(to right,lightskyblue, burlywood);
         border-image-slice: 1;
-        box-shadow: #333;
+
     }
     .tm-banner-text{
         text-shadow: 5px 5px 3px  #333;
