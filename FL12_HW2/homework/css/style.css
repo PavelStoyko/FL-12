@@ -1,5 +1,158 @@
-/*
+    .tm-main-nav li:hover{
+        background: lightskyblue;
+    }
+    .tm-main-nav a:hover{
+        color: #fff;
+    }
+    .tm-banner-inner{
+        border: 10px solid;
+        border-image-source: linear-gradient(to right,lightskyblue, burlywood);
+        border-image-slice: 1;
+        box-shadow: #333;
+    }
+    .tm-banner-text{
+        text-shadow: 5px 5px 3px  #333;
+        animation: move 5s infinite;
+        position: relative;
+    }
+@keyframes move {
+        0%{right: -200px}
+        100%{right: 0}
+}
+    .flex-2-col{
+        display: flex;
+    }
+    .flex-2-col p{
+        text-indent: 20px;
+    }
+    .tm-team-description-container{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .box-bg:hover{
+        background: lightgrey;
+    }
+    .box-bg:hover h2{
+        color: lightskyblue;
+        font-weight: bold;
+        font-style: italic;
+    }
+    .heading h2{
+        color: lightskyblue;
+        text-align: center;
+    }
+    .heading ol{
+        list-style: lower-alpha;
+    }
+    .heading ol li:hover:before{
+        content: '>';
+    }
+    .heading ol li:nth-child(1):after,
+    .heading ol li:nth-child(3):after{
+        content: 'New';
+        vertical-align: super;
+        font-weight: bold;
+        font-size: 10px;
+        color: red;
+    }
+    .blocks{
+        background-color: #fff;
+    }
+    .tm-team-description-container p{
+        text-indent: 25px;
+    }
+    .blocks .tm-team-description-container p:last-child{
+        word-spacing: 10px;
+        letter-spacing: 5px;
+        font-style: italic;
+    }
+    .box-work{
+        display: flex;
+        flex-direction: column;
+        padding: 5px;
+    }
+    .box-work:nth-child(odd){
+        background-color: lightskyblue;
+        color: white;
+    }
+    .box-work p:first-letter{
+        font-weight: bold;
+    }
+    .tm-section-description{
+        text-indent: 25px;
+        line-height: 30px;
+    }
 
-write your code here
 
-*/
+@media print {
+    .tm-sidebar,
+    .tm-team-img,
+    #about,
+    .gallery-container,
+    .carousel-indicators,
+    .img-contact-us,
+    #contact{
+        display: none;
+    }
+    body{
+        padding: 0;
+        background: white;
+        font-size: 18px;
+    }
+    body ol{
+        list-style: none;
+        width: 60%;
+        margin: 0 auto;
+        display: flex;
+        flex-direction: column;
+       justify-content: space-around;
+    }
+    body ol li:nth-child(odd){
+        text-align: right;
+    }
+    body ol li:nth-child(even){
+        text-align: left;
+    }
+    body h2{
+        text-transform: uppercase;
+        color: lightskyblue;
+        font-weight: lighter;
+    }
+    section{
+        margin: 0 auto;
+        padding: 0;
+    }
+    .tm-banner{
+        padding: 20px 0 0 0;
+    }
+    .padding-medium{
+        padding: 0;
+    }
+    .tm-main-content{
+        padding: 0;
+    }
+    .tm-content-box{
+        vertical-align: center;
+        margin-bottom: 10px;
+    }
+    .tm-team-description-container{
+        text-align: center;
+        max-width: none;
+    }
+    .tm-team-description-container p:last-child{
+        word-spacing: 10px;
+        letter-spacing: 5px;
+        font-style: italic;
+    }
+    .heading{
+        text-align: center;
+    }
+    .carousel{
+        padding: 0;
+    }
+    footer{
+        padding: 0;
+    }
+}
