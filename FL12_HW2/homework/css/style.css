@@ -1,3 +1,4 @@
+@media screen {
     .tm-main-nav li:hover{
         background: lightskyblue;
     }
@@ -127,6 +128,7 @@
         border-left: 20px solid skyblue;
         border-top: 20px solid skyblue;
     }
+}
 @media print {
     .tm-sidebar,
     .tm-team-img,
@@ -182,7 +184,7 @@
         text-align: center;
         max-width: none;
     }
-    .tm-team-description-container p:last-child{
+    .blocks .tm-team-description-container p:last-child{
         word-spacing: 10px;
         letter-spacing: 5px;
         font-style: italic;
