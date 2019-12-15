@@ -1,0 +1,232 @@
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/home_PC\/Desktop\/FL12_HW1\/FL-12\/FL12_HW3\/homework\/scss\/_main\.scss}line{font-family:\0000342}}
+body {
+  max-width: 1920px;
+  margin: 0 auto;
+  background-color: #21232E;
+  font-family: "Fresca", sans-serif; }
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/home_PC\/Desktop\/FL12_HW1\/FL-12\/FL12_HW3\/homework\/scss\/_main\.scss}line{font-family:\0000347}}
+  body header {
+    width: 100%;
+    height: 800px;
+    margin: 0 auto;
+    background: url("../img/m-h-night.jpg") center center no-repeat;
+    background-size: cover;
+    border-radius: 0 0 45% 0;
+    color: #fff; }
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/home_PC\/Desktop\/FL12_HW1\/FL-12\/FL12_HW3\/homework\/scss\/_main\.scss}line{font-family:\0000355}}
+    body header .header-wrap {
+      width: 80%;
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+      margin: 0 auto; }
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/home_PC\/Desktop\/FL12_HW1\/FL-12\/FL12_HW3\/homework\/scss\/_main\.scss}line{font-family:\0000361}}
+      body header .header-wrap .landing-logo {
+        display: flex;
+        align-items: center;
+        justify-content: space-between; }
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/home_PC\/Desktop\/FL12_HW1\/FL-12\/FL12_HW3\/homework\/scss\/_main\.scss}line{font-family:\000038}}
+        body header .header-wrap .landing-logo img {
+          width: 70px;
+          margin-right: 10px; }
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/home_PC\/Desktop\/FL12_HW1\/FL-12\/FL12_HW3\/homework\/scss\/_main\.scss}line{font-family:\0000312}}
+        body header .header-wrap .landing-logo p {
+          font-size: 30px;
+          font-weight: bold;
+          display: flex;
+          flex-direction: column;
+          line-height: 25px; }
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/home_PC\/Desktop\/FL12_HW1\/FL-12\/FL12_HW3\/homework\/scss\/_main\.scss}line{font-family:\0000318}}
+          body header .header-wrap .landing-logo p span {
+            font-size: 15px;
+            text-align: center; }
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/home_PC\/Desktop\/FL12_HW1\/FL-12\/FL12_HW3\/homework\/scss\/_main\.scss}line{font-family:\0000364}}
+      body header .header-wrap .header_heading {
+        font-size: 80px;
+        width: 50%;
+        font-weight: bold;
+        font-family: "Hind", sans-serif;
+        margin: 0;
+        line-height: 90px;
+        z-index: 2; }
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/home_PC\/Desktop\/FL12_HW1\/FL-12\/FL12_HW3\/homework\/scss\/_main\.scss}line{font-family:\0000372}}
+        body header .header-wrap .header_heading::before {
+          content: '';
+          background-color: #FF4E33;
+          width: 340px;
+          height: 50px;
+          position: absolute;
+          z-index: -1;
+          top: 220px; }
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/home_PC\/Desktop\/FL12_HW1\/FL-12\/FL12_HW3\/homework\/scss\/_main\.scss}line{font-family:\0000383}}
+      body header .header-wrap .header_text {
+        white-space: pre;
+        font-size: 20px;
+        margin-left: -60px; }
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/home_PC\/Desktop\/FL12_HW1\/FL-12\/FL12_HW3\/homework\/scss\/_main\.scss}line{font-family:\0000388}}
+      body header .header-wrap div:last-child {
+        width: 35%;
+        display: flex;
+        align-items: center;
+        justify-content: space-between; }
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/home_PC\/Desktop\/FL12_HW1\/FL-12\/FL12_HW3\/homework\/scss\/_main\.scss}line{font-family:\0000393}}
+        body header .header-wrap div:last-child .header_button {
+          padding: 10px 30px;
+          font-size: 20px;
+          border-radius: 5px;
+          background-color: #E3AC00;
+          color: white;
+          border: none;
+          font-family: "Source Sans Pro", sans-serif;
+          font-weight: bold; }
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/home_PC\/Desktop\/FL12_HW1\/FL-12\/FL12_HW3\/homework\/scss\/_main\.scss}line{font-family:\0000396}}
+        body header .header-wrap div:last-child .header_button:hover {
+          border: 1px solid #E3AC00;
+          cursor: pointer; }
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/home_PC\/Desktop\/FL12_HW1\/FL-12\/FL12_HW3\/homework\/scss\/_main\.scss}line{font-family:\0000399}}
+        body header .header-wrap div:last-child a {
+          color: #fff;
+          font-size: 25px; }
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/home_PC\/Desktop\/FL12_HW1\/FL-12\/FL12_HW3\/homework\/scss\/_main\.scss}line{font-family:\00003105}}
+  body main {
+    width: 70%;
+    margin: 0 auto; }
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/home_PC\/Desktop\/FL12_HW1\/FL-12\/FL12_HW3\/homework\/scss\/_main\.scss}line{font-family:\00003108}}
+    body main .section_text {
+      font-size: 50px;
+      font-weight: bold;
+      text-align: center;
+      color: #fff;
+      font-family: "Hind", sans-serif;
+      z-index: 2; }
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/home_PC\/Desktop\/FL12_HW1\/FL-12\/FL12_HW3\/homework\/scss\/_main\.scss}line{font-family:\00003115}}
+      body main .section_text::before {
+        content: '';
+        position: absolute;
+        z-index: -1;
+        background-color: #FF4E33;
+        width: 230px;
+        height: 60px;
+        top: 850px;
+        left: 1055px; }
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/home_PC\/Desktop\/FL12_HW1\/FL-12\/FL12_HW3\/homework\/scss\/_main\.scss}line{font-family:\00003126}}
+    body main .section_card_wrap {
+      width: 90%;
+      margin: 0 auto; }
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/home_PC\/Desktop\/FL12_HW1\/FL-12\/FL12_HW3\/homework\/scss\/_main\.scss}line{font-family:\00003129}}
+      body main .section_card_wrap .section_card_img {
+        width: 100%; }
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/home_PC\/Desktop\/FL12_HW1\/FL-12\/FL12_HW3\/homework\/scss\/_main\.scss}line{font-family:\00003132}}
+      body main .section_card_wrap .section_card {
+        background-color: #3B3F50;
+        display: flex;
+        padding: 20px;
+        margin-bottom: 20px; }
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/home_PC\/Desktop\/FL12_HW1\/FL-12\/FL12_HW3\/homework\/scss\/_main\.scss}line{font-family:\00003137}}
+        body main .section_card_wrap .section_card .section_card_right_container {
+          padding: 10px 40px;
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          font-size: 20px; }
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/home_PC\/Desktop\/FL12_HW1\/FL-12\/FL12_HW3\/homework\/scss\/_main\.scss}line{font-family:\00003143}}
+          body main .section_card_wrap .section_card .section_card_right_container .section_card_heading {
+            font-size: 25px;
+            font-weight: bolder;
+            color: #fff;
+            font-family: "Hind", sans-serif; }
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/home_PC\/Desktop\/FL12_HW1\/FL-12\/FL12_HW3\/homework\/scss\/_main\.scss}line{font-family:\00003149}}
+          body main .section_card_wrap .section_card .section_card_right_container .section_card_text {
+            padding: 0 55px;
+            text-align: justify;
+            color: #cec8ce; }
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/home_PC\/Desktop\/FL12_HW1\/FL-12\/FL12_HW3\/homework\/scss\/_main\.scss}line{font-family:\00003154}}
+          body main .section_card_wrap .section_card .section_card_right_container a {
+            color: #fff;
+            font-size: 25px; }
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/home_PC\/Desktop\/FL12_HW1\/FL-12\/FL12_HW3\/homework\/scss\/_main\.scss}line{font-family:\00003160}}
+    body main .section_banner {
+      background: linear-gradient(to right, #DCA107, #97344D);
+      border-radius: 5px;
+      font-size: 20px;
+      color: #AFB3C1;
+      display: flex;
+      justify-content: space-around;
+      align-items: center;
+      position: relative;
+      top: 60px; }
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/home_PC\/Desktop\/FL12_HW1\/FL-12\/FL12_HW3\/homework\/scss\/_main\.scss}line{font-family:\00003170}}
+      body main .section_banner .section_banner_heading {
+        font-size: 30px;
+        font-weight: bold;
+        font-family: "Hind", sans-serif;
+        color: #333333;
+        position: relative;
+        z-index: 2; }
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/home_PC\/Desktop\/FL12_HW1\/FL-12\/FL12_HW3\/homework\/scss\/_main\.scss}line{font-family:\00003177}}
+        body main .section_banner .section_banner_heading::before {
+          content: '';
+          position: absolute;
+          z-index: -1;
+          background-color: #FF4E33;
+          width: 65px;
+          height: 40px;
+          top: 0px;
+          left: 125px; }
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/home_PC\/Desktop\/FL12_HW1\/FL-12\/FL12_HW3\/homework\/scss\/_main\.scss}line{font-family:\00003188}}
+      body main .section_banner .section_banner_button {
+        padding: 10px 30px;
+        font-size: 20px;
+        border-radius: 5px;
+        background-color: #E3AC00;
+        color: white;
+        border: none;
+        font-family: "Source Sans Pro", sans-serif;
+        font-weight: bold; }
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/home_PC\/Desktop\/FL12_HW1\/FL-12\/FL12_HW3\/homework\/scss\/_main\.scss}line{font-family:\00003191}}
+      body main .section_banner .section_banner_button:hover {
+        border: 1px solid #E3AC00;
+        cursor: pointer; }
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/home_PC\/Desktop\/FL12_HW1\/FL-12\/FL12_HW3\/homework\/scss\/_main\.scss}line{font-family:\00003196}}
+  body footer {
+    width: 100%;
+    height: 150px;
+    color: #AFB3C1;
+    padding: 100px 0 50px 0;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    background-color: #3B3F50;
+    font-size: 20px; }
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/home_PC\/Desktop\/FL12_HW1\/FL-12\/FL12_HW3\/homework\/scss\/_main\.scss}line{font-family:\00003206}}
+    body footer .footer-wrap {
+      width: 80%;
+      margin: 0 auto;
+      display: flex;
+      justify-content: space-between;
+      align-items: center; }
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/home_PC\/Desktop\/FL12_HW1\/FL-12\/FL12_HW3\/homework\/scss\/_main\.scss}line{font-family:\00003212}}
+      body footer .footer-wrap .footer_logo {
+        display: flex;
+        align-items: center;
+        justify-content: space-between; }
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/home_PC\/Desktop\/FL12_HW1\/FL-12\/FL12_HW3\/homework\/scss\/_main\.scss}line{font-family:\000038}}
+        body footer .footer-wrap .footer_logo img {
+          width: 70px;
+          margin-right: 10px; }
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/home_PC\/Desktop\/FL12_HW1\/FL-12\/FL12_HW3\/homework\/scss\/_main\.scss}line{font-family:\0000312}}
+        body footer .footer-wrap .footer_logo p {
+          font-size: 30px;
+          font-weight: bold;
+          display: flex;
+          flex-direction: column;
+          line-height: 25px; }
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/home_PC\/Desktop\/FL12_HW1\/FL-12\/FL12_HW3\/homework\/scss\/_main\.scss}line{font-family:\0000318}}
+          body footer .footer-wrap .footer_logo p span {
+            font-size: 15px;
+            text-align: center; }
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/home_PC\/Desktop\/FL12_HW1\/FL-12\/FL12_HW3\/homework\/scss\/_main\.scss}line{font-family:\00003215}}
+      body footer .footer-wrap .footer_text {
+        width: 450px; }
+
+/*# sourceMappingURL=style2.css.map */

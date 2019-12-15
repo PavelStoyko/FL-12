@@ -1,1 +1,220 @@
-// Write your styles here
+  @mixin margin_center{
+      margin: 0 auto;
+  }
+  @mixin logo-img {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      img{
+        width: 70px;
+        margin-right: 10px;
+      }
+      p{
+        font-size: 30px;
+        font-weight: bold;
+        display: flex;
+        flex-direction: column;
+        line-height: 25px;
+        span{
+          font-size: 15px;
+          text-align: center;
+        }
+      }
+  }
+  @mixin btn{
+      padding: 10px 30px;
+      font-size: 20px;
+      border-radius: 5px;
+      background-color: $Btn_color;
+      color: white;
+      border: none;
+      font-family: map_get($F_fam, "Sans"), $Sans-ser;
+      font-weight: bold;
+  }
+  @mixin btn_hover{
+    border: 1px solid $Btn_color;
+    cursor: pointer;
+  }
+  @mixin link{
+    color: #fff;
+    font-size: 25px;
+  }
+body{
+  max-width: 1920px;
+  @include margin_center;
+  background-color: $BG_color;
+  font-family: $F_fam_main;
+  header{
+    width: 100%;
+    height: 800px;
+    @include margin_center;
+    background: $Img_header center center no-repeat;
+    background-size: cover;
+    border-radius: 0 0 45% 0;
+    color: $Text_color_header;
+    .header-wrap{
+      width: 80%;
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+      @include margin_center;
+      .landing-logo{
+        @include logo-img;
+      }
+      .header_heading{
+        font-size: 80px;
+        width: 50%;
+        font-weight: bold;
+        font-family: $F_fam_heading;
+        margin: 0;
+        line-height: 90px;
+        z-index: 2;
+        &::before{
+          content: '';
+          background-color: $BG_color_text;
+          width: 340px;
+          height: 50px;
+          position: absolute;
+          z-index: -1;
+          top: 220px;
+        }
+      }
+
+      .header_text{
+        white-space: pre;
+        font-size: 20px;
+        margin-left: -60px;
+      }
+      div:last-child{
+        width: 35%;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        .header_button{
+          @include btn;
+        }
+        .header_button:hover{
+          @include btn_hover;
+        }
+        a{
+          @include link;
+        }
+      }
+    }
+  }
+  main{
+    width: 70%;
+    @include margin_center;
+    .section_text{
+      font-size: 50px;
+      font-weight: bold;
+      text-align: center;
+      color: $Text_color_header;
+      font-family: $F_fam_heading;
+      z-index: 2;
+      &::before{
+        content: '';
+        position: absolute;
+        z-index: -1;
+        background-color: $BG_color_text;
+        width: 230px;
+        height: 60px;
+        top: 850px;
+        left: 1055px;
+      }
+    }
+    .section_card_wrap{
+      width: 90%;
+      @include margin_center;
+      .section_card_img{
+        width: 100%;
+      }
+      .section_card{
+        background-color: $BG_color_footer;
+        display: flex;
+        padding: 20px;
+        margin-bottom: 20px;
+        .section_card_right_container{
+          padding: 10px 40px;
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          font-size: 20px;
+          .section_card_heading{
+            font-size: 25px;
+            font-weight: bolder;
+            color: #fff;
+            font-family: $F_fam_heading;
+          }
+          .section_card_text{
+            padding: 0 55px;
+            text-align: justify;
+            color: #cec8ce;
+          }
+          a {
+           @include link;
+          }
+        }
+      }
+    }
+    .section_banner{
+      background: $Grad_color;
+      border-radius: 5px;
+      font-size: 20px;
+      color: #AFB3C1;
+      display: flex;
+      justify-content: space-around;
+      align-items: center;
+      position: relative;
+      top: 60px;
+      .section_banner_heading{
+        font-size: 30px;
+        font-weight: bold;
+        font-family: $F_fam_heading;
+        color: #333333;
+        position: relative;
+        z-index: 2;
+        &::before{
+          content: '';
+          position: absolute;
+          z-index: -1;
+          background-color: $BG_color_text;
+          width: 65px;
+          height: 40px;
+          top: 0px;
+          left: 125px;
+        }
+      }
+      .section_banner_button{
+        @include btn;
+      }
+      .section_banner_button:hover{
+        @include btn_hover;
+      }
+    }
+  }
+  footer{
+    width: 100%;
+    height: 150px;
+    color: #AFB3C1;
+    padding: 100px 0 50px 0;
+    @include margin_center;
+    display: flex;
+    align-items: center;
+    background-color: $BG_color_footer;
+    font-size: 20px;
+    .footer-wrap{
+      width: 80%;
+      @include margin_center;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      .footer_logo{
+        @include logo-img;
+      }
+      .footer_text{
+        width: 450px;
+      }
+    }
+  }
+}

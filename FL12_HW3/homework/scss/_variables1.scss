@@ -1,0 +1,11 @@
+$BG_color: #fff;
+$BG_color_text: #14A0C7;
+$Text_color_header: #2C2F3C;
+$Img_header: url("../img/m-h-day.jpg");
+$F_fam: ("Sans": 'Source Sans Pro', "Hind": 'Hind', "Fresca": 'Fresca');
+$Sans-ser: sans-serif;
+$F_fam_main: map_get($F_fam, "Hind"), $Sans-ser;
+$F_fam_heading: map_get($F_fam, "Hind"), $Sans-ser;
+$BG_color_footer: #21232E;
+$Grad_color: linear-gradient(to right, #649413, #305ECF);
+$Btn_color: #699900;

@@ -1,0 +1,11 @@
+$BG_color: #21232E;
+$BG_color_text: #FF4E33;
+$Text_color_header: #fff;
+$Img_header: url("../img/m-h-night.jpg");
+$F_fam: ("Sans": 'Source Sans Pro', "Hind": 'Hind', "Fresca": 'Fresca');
+$Sans-ser: sans-serif;
+$F_fam_main: map_get($F_fam, "Fresca"), $Sans-ser;
+$F_fam_heading: map_get($F_fam, "Hind"), $Sans-ser;
+$BG_color_footer: #3B3F50;
+$Grad_color: linear-gradient(to right, #DCA107, #97344D);
+$Btn_color: #E3AC00;
