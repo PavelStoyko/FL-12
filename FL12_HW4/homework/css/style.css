@@ -1,0 +1,170 @@
+/*css reset*/
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+    display: block;
+}
+body {
+    line-height: 1;
+}
+ol, ul {
+    list-style: none;
+}
+blockquote, q {
+    quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+    content: '';
+    content: none;
+}
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+/*css reset*/
+body{
+    max-width: 1600px;
+    margin: 0 auto;
+}
+nav{
+    width: 100%;
+    margin: 0 auto;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 9999;
+    height: 50px;
+    background-color: #fff;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 35px 0;
+}
+    nav a{
+        text-decoration: none;
+        color: #807777;
+        margin-right: 45px;
+    }
+    nav a:hover{
+        color: #eed37b;
+    }
+    .nav-left{
+        text-transform: uppercase;
+        color: #555555;
+    }
+    header{
+        background: url("../img/home-bg.jpg") center center no-repeat;
+        width: 100%;
+        height: 800px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        margin: 120px 0 110px 0;
+    }
+    header h1{
+        font-size: 50px;
+        color: white;
+        font-weight: bold;
+        margin-bottom: 30px;
+    }
+    header p{
+        font-size: 12px;
+        font-weight: bold;
+        letter-spacing: 2px;
+        color: #bfba55;
+        margin-bottom: 50px;
+    }
+    .header-button{
+        width: 160px;
+        height: 45px;
+        font-size: 12px;
+        font-weight: bold;
+        letter-spacing: 2px;
+        border-radius: 20px;
+        border: none;
+        text-transform: uppercase;
+        background-color: white;
+        cursor: pointer;
+    }
+    main{
+        width: 60%;
+        margin: 0 auto;
+    }
+    main hr{
+        margin-bottom: 85px;
+        color: #f0f0f0;
+        border: 1px solid #f0f0f0;
+    }
+    main article{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: flex-start;
+        margin-bottom: 60px;
+    }
+    main article img{
+        width: 100%;
+        margin-bottom: 40px;
+    }
+    main article h2{
+        font-size: 27px;
+        font-weight: bold;
+        margin-bottom: 20px;
+    }
+    .article-author-info{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        min-width: 35%;
+        max-width: 80%;
+        margin-bottom: 20px;
+    }
+    .article-author-info *{
+        margin-right: 10px;
+    }
+    .article-author-info img{
+        border-radius: 100px;
+        width: 42px;
+        margin: 0;
+    }
+    .comments-info{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        width: 28%;
+    }
+    .article-text{
+        line-height: 30px;
+        margin-bottom: 40px;
+    }
+    .article-button{
+        border: 1px solid #ccc;
+        border-radius: 50px;
+        width: 190px;
+        height: 50px;
+        background: none;
+        cursor: pointer;
+    }
+
