@@ -167,4 +167,34 @@ nav{
         background: none;
         cursor: pointer;
     }
-
+    footer{
+        background-color: #000000;
+        color: white;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        height: 350px;
+    }
+        footer h2{
+            font-size: 30px;
+            font-weight: bold;
+        }
+        .footer-left{
+            width: 30%;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            margin: 90px 0;
+        }
+        .footer-left *{
+            padding-bottom: 30px;
+        }
+        .footer-right{
+            width: 30%;
+            display: flex;
+            flex-direction: column;
+            margin: 90px 0;
+        }
+        .footer-right p{
+            white-space: pre;
+        }
