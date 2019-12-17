@@ -169,32 +169,36 @@ nav{
     }
     footer{
         background-color: #000000;
-        color: white;
-        display: flex;
-        justify-content: space-around;
-        align-items: center;
+        color: #777;
         height: 350px;
+    }
+    .footer-wrap{
+        width: 60%;
+        margin: 0 auto;
+        display: flex;
+        justify-content: space-between;
+        padding-top: 5%;
     }
         footer h2{
             font-size: 30px;
             font-weight: bold;
+            color: white;
         }
         .footer-left{
-            width: 30%;
             display: flex;
             flex-direction: column;
             justify-content: space-between;
-            margin: 90px 0;
+            width: 40%;
+            line-height: 30px;
         }
         .footer-left *{
-            padding-bottom: 30px;
+            padding-bottom: 20px;
         }
         .footer-right{
-            width: 30%;
+            width: 40%;
             display: flex;
             flex-direction: column;
-            margin: 90px 0;
         }
-        .footer-right p{
-            white-space: pre;
+        .footer-right *{
+            padding-bottom: 20px;
         }
