@@ -1,17 +1,18 @@
-/*Task 2. Identify triangle type.
-    App workflow:
-1.	User input 3 numbers (a, b, c) for triangle sides length.
-2.	Check type of inputs. If type of inputs ( a OR b OR c ) is: empty string, undefined -  show modal window with message ( input values should be ONLY numbers )
-3.	Check values of input values. If one of the value ( a OR b OR c ) equal to 0 - show modal window with message ( A triangle must have 3 sides with a positive definite length )
-4.	Check such triangle can exist. If it can’t exit show modal window with message -  ‘Triangle doesn’t exist’.
-5.	If triangle exist check its type:
-    ●	equivalent (every side is equal)
-●	isosceles (two sides are equal)
-●	scalene (no sides are equal)
-6.	Use console.log to show result, variants:
-
--	If such triangle can’t exist: ‘Triangle doesn’t exist’
--	If triangle has three equal sides: ‘Equilateral triangle’
--	If triangle has two equal sides, third differs: ‘Isosceles triangle’
--	If triangle has three different sides: ‘Scalene triangle’
-*/
+let a = parseInt(prompt('Input side A for triangle', '1'), 10);
+let b = parseInt(prompt('Input side B for triangle', '1'), 10);
+let c = parseInt(prompt('Input side C for triangle', '1'), 10);
+if(a ==='' || b==='' || c === '' || a ==='undefined' || b ==='undefined' || c ==='undefined'){
+    alert('input values should be ONLY numbers');
+} else if( a===0 || b ===0 || c ===0){
+    alert('A triangle must have 3 sides with a positive definite length');
+} else if( a<0 || b<0 || c<0){
+    alert('Triangle doesn’t exist');
+} else {
+    if(a===b && b ===c){
+        console.log('Equilateral triangle');
+    } else if(a===b || a===c || b===c){
+        console.log('Isosceles triangle');
+    } else{
+        console.log('Scalene triangle');
+    }
+}
