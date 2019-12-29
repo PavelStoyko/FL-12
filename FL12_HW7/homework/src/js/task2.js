@@ -11,14 +11,15 @@ if (!playConfirm){
     while (playAgainConfirm){
         let number = Math.floor(Math.random()*numberRange);
         let isGuess = false;
-        for (let i=0; i<3; i++){
+        let iMaxLength = 3;
+        for (let i=0; i<iMaxLength; i++){
             if(i===1){
                 prize = prize/prizeMultiplication;
-            } else if (i===2){
+            } else if (i===1+1){
                 prize = prize/prizeMultiplication;
             }
             let guess = +prompt(`Choose a roulette pocket number from 0 to ${numberRange}
-                          Attempts left: ${3-i}
+                          Attempts left: ${iMaxLength-i}
                                 total prize: ${totalPrize}$
                                 Possible prize on current attempt: ${prize}$     
                                 ${number}      
@@ -30,7 +31,8 @@ if (!playConfirm){
             }
         }
         if (isGuess){
-            let continueGame = confirm(`Congratulation, you won! Your prize is: ${totalPrize}$. Do you want to continue?`);
+            let continueGame = confirm(`Congratulation, you won! Your prize is: ${totalPrize}$. 
+                                        Do you want to continue?`);
             if(!continueGame){
                 alert(`Thank you for your participation. Your prize is: ${totalPrize}$`);
                 playAgainConfirm = confirm('Do you want to play again?');
