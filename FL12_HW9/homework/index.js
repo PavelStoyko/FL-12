@@ -10,16 +10,16 @@ function convert() {
     }
     return newArr;
 }
-console.log(convert(1, '2', 3, 4, '5', '6'));
+// console.log(convert(1, '2', 3, 4, '5', '6'));
 /*task 2 */
 function executeForEach(arr, func){
     for (let i = 0; i < arr.length; i++) {
             func(arr[i]);
     }
 }
-console.log(executeForEach([1,2,3,4], function (el){
- console.log(el*2) 
-}));
+// console.log(executeForEach([1,2,3,4], function (el){
+//  console.log(el*2)
+// }));
 /*task3*/
 function mapArray(arr, func) {
     let result = [];
@@ -28,9 +28,9 @@ function mapArray(arr, func) {
     });
     return result;
 }
-console.log(mapArray([2, '5', 8], function (el) {
-    return el+3;
-}));
+// console.log(mapArray([2, '5', 8], function (el) {
+//     return el+3;
+// }));
 /*task 4*/
 function filterArray(arr, func) {
     let result = [];
@@ -41,9 +41,9 @@ function filterArray(arr, func) {
     });
     return result;
 }
-console.log(filterArray([2,5,8], function (el){
-    return el%2===0;
-}));
+// console.log(filterArray([2,5,8], function (el){
+//     return el%2===0;
+// }));
 /*task 5 */
 function flipOver(str) {
     let newStr='';
@@ -52,7 +52,7 @@ function flipOver(str) {
     }
     return newStr;
 }
-console.log(flipOver('hey world'));
+// console.log(flipOver('hey world'));
 /*task6*/
 function makeListFromRange(arr) {
     if(arr[0]<arr[1]){
@@ -65,7 +65,7 @@ function makeListFromRange(arr) {
  return 'error!'; 
 }
 }
-console.log(makeListFromRange([2,10]));
+// console.log(makeListFromRange([2,10]));
 /*task 7*/
 const actors = [
     { name: 'tommy', age: 36 },
