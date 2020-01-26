@@ -34,40 +34,61 @@ const structure = [
       ]
     }
 ];
-
 const rootNode = document.getElementById('root');
-
 // Todo: your code goes here
-cl(structure);
-function goStructure(someStructure, parent) {
-    for (let k = 0; k < someStructure.length ; k++) {
-        if (someStructure[k].folder){
-            if(someStructure[k].title){
-                let ul = document.createElement('ul');
-                let li = document.createElement('li');
-                let i = document.createElement('i');
+const ulElement = document.createElement('ul');
+rootNode.appendChild(ulElement);
+function goStructure(structure, parentTagElement) {
+    structure.forEach(element => {
+        let li = document.createElement('li');
+        let div = document.createElement('div');
+        let i = document.createElement('i');
+        let span = document.createElement('span');
+            if (element.folder){
                 i.className = 'material-icons orange600';
                 i.innerText = 'folder';
-                ul.append(i,someStructure[k].title);
-                parent.append(ul);
-                cl(parent);
-                if (someStructure[k].children){
-                    ul.appendChild(li);
-                    goStructure(someStructure[k].children, parent.nextSibling);
-                }
+                div.className = 'folder';
+                div.addEventListener('click', clickFolder);
+            } else {
+                i.className = 'material-icons';
+                i.innerText = 'insert_drive_file';
+                div.className = 'file';
             }
-        } else if (someStructure[k].title){
-            let i = document.createElement('i');
-            i.className = 'material-icons';
-            i.innerText = 'insert_drive_file';
-            let li = document.createElement('li');
-            li.append(i, someStructure);
+        span.innerText = element.title;
+        div.appendChild(i);
+        div.appendChild(span);
+        li.appendChild(div);
+        parentTagElement.appendChild(li);
+        if (!element.children && element.folder){
+            let freeUL = document.createElement('ul');
+            let freeLI = document.createElement('li');
+            freeLI.innerText = 'Folder is empty';
+            freeLI.className = 'freeLi';
+            freeUL.className = 'feeUl';
+            freeUL.appendChild(freeLI);
+            li.appendChild(freeUL);
         }
-    }
+        if (element.children){
+            let childTagUl = document.createElement('ul');
+            childTagUl.className = 'child';
+            li.appendChild(childTagUl);
+            goStructure(element.children, childTagUl);
+        }
+    });
 }
-
-goStructure(structure, rootNode);
-
-function cl(el) {
-    console.log(el);
+goStructure(structure, ulElement);
+function clickFolder(){
+    let zero = 0;
+    let folder = this.children[zero].innerHTML;
+    if (folder === 'folder_open') {
+        this.children[zero].innerHTML = 'folder';
+    } else {
+        this.children[zero].innerHTML = 'folder_open';
+    }
+    let block = this.nextElementSibling.style.display;
+    if (block === 'block') {
+        this.nextElementSibling.style.display = 'none';
+    } else {
+        this.nextElementSibling.style.display = 'block';
+    }
 }

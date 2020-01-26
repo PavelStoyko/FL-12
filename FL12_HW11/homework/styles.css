@@ -5,6 +5,9 @@
     cursor: pointer;
     list-style: none;
 }
-li:hover{
+.file:hover, .folder:hover{
     background: yellow;
+}
+.freeLi{
+    font-style: italic;
 }
