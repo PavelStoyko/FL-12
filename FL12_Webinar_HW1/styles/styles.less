@@ -1,0 +1,66 @@
+/*variables*/
+@blue:   #2A74BF;
+@red:    #D7514C;
+@green:  #4D944B;
+@orange: #D8C11D;
+@grey:   #666;
+@text: #fff;
+/*************************/
+h1, h2, h3 {
+  color: @blue;
+  font-weight: bold;
+}
+.border-primary {
+  border-color: @blue!important;
+}
+.navbar-light .navbar-nav .active {
+  background-color: @blue;
+  & > .nav-link {
+    color: @text;
+  }
+}
+.navbar-toggler {
+  padding: 0.25rem 0.55rem;
+  font-size: 16px;
+}
+.class {
+  padding: 1px;
+  &__name {
+    font-weight: bold;
+    color: @text;
+    text-align: center;
+    padding: 0.5em 0.2em;
+  }
+  &--style__one {
+    background-color: @red;
+  }
+  &--style__two {
+    background-color: @blue;
+  }
+  &--style__three {
+    background-color: @orange;
+  }
+  &--style_four{
+    background-color: @green;
+  }
+}
+.footer__content {
+  background-color: @grey;
+  color: @text;
+  font-weight: bold;
+}
+html {
+  position: relative;
+  min-height: 100%;
+  font-size: 14px;
+}
+body {
+  margin-bottom: 65px;
+}
+.footer {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 40px;
+  line-height: 40px;
+}
