@@ -1,0 +1,45 @@
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>FL12_Webinar_HW7</title>
+  </head>
+  <body>
+    <div class="wrapper">
+      <h1>Rock, paper and scissors</h1>
+      <h2>Rules:</h2>
+      <p class="rules">
+        Scissors beats a paper,<br />
+        Paper beats rock,<br />
+        Rock beats scissors.<br />
+        And we play up to three wins!
+      </p>
+      <h2>Let's play!</h2>
+      <div id="buttons" class="buttons">
+        <div class="button button-rock" id="rock">
+          <img class="button__img" src="img/rock.png" />
+        </div>
+        <div class="button button-paper" id="paper">
+          <img class="button__img" src="img/paper.png" />
+        </div>
+        <div class="button button-scissors" id="scissors">
+          <img class="button__img" src="img/scissors.png" />
+        </div>
+      </div>
+      <div class="hands">
+        <div class="hand hand-left">
+          <img class="hand__img hand__img-left" src="img/empty.png" />
+        </div>
+        <div class="hands__separator">
+        </div>
+        <div class="hand hand-right">
+          <img class="hand__img hand__img-right" src="img/empty.png" />
+        </div>
+      </div>      
+      <h2>Results:</h2>
+      <ol class="results">
+      </ol>
+      <h2 id="final-result"></h2>
+      <button id="reset">Reset</button>
+    </div>
+  </body>
+</html>
